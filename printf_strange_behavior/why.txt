@@ -1,0 +1,19 @@
+EXPERIMENT #1:
+Action: Compile and Run
+Observations: 
+The expected output is 
+Enter two numbers
+
+But this output is not seen
+
+EXPERIMENT #2:
+Action: Move Scanf statement above while loop.
+Observations: Now the output is seen and hanging which is expected
+
+EXPERIMENT #3:
+Action: Now add \n to print statement as below
+Observation: The output is seen and hanging (Expected)
+
+EXPERIMENT #4:
+Action: Now remove \n from the printf line, comment out while loop, scanf line, addition line, printf line for printing result
+Observations: The line "Enter two numbers" is printed to screen.

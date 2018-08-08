@@ -1,0 +1,15 @@
+The reason behind the strange behavior is described in Richard Stevans book.
+
+PRINTF PRINTS TO SCREEN WHEN
+The job of printf is to write output to stdout buffer. kernel flushes output buffers when
+
+kernel need to read something in. (EXPERIMENT #2)
+or when it encounters newline (since stdout is by default set to linebuffered)(EXPERIMENT #3)
+program exits and all output buffers are flushed (EXPERIMENT #4)
+
+
+By default stdout set to line buffering
+so printf will not print as the line did not end.
+if it is no buffered all lines are output as is.
+full buffered then only when buffer is full it is flushed.
+
