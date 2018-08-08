@@ -1,0 +1,20 @@
+NOTE: LET US KEEP MULTI-BYTE CHARSETS ASIDE FOR EASY UNDERSTANDING.
+Let us understand difference between String and Array of characters
+In a byte of 8 bits we can store 0 to 255 if unsigned
+-127 to +127 if signed
+
+As a whole if we see a byte (8 bits) the value that can be fit into it is -127 to 255 (range).
+The range of ASCII characters (32 to 126) are considered as printable characters.
+
+Given character array a[10] if any of the bytes a[0] to a[9] has value out of the range of printable characters(above definition) then it is not a STRING, its just array of characters.
+If all of the bytes fall within the printable characters range (32 to 126) then it is STRING.
+In summary for array of characters the range can be any of (-127 to 255). So important conclusion is since printable characters (32 to 126) is proper subset of -127 to 255 All STRINGS can be called array of characters.
+
+Now let us apply above to BINARY file vs TEXT file.
+
+If in a file all bytes are in range of (32 to 96) it should be called TEXT file.
+If any of they byte falls out of this range i.e (-127 to 31) or (97 to 255) then it is BINARY file.
+
+In summary since (32 to 96) is proper subset of (-127 to 255) ALL TEXT FILES ARE BINARY FILES.
+
+I have not verified the printable characters range, etc. But I am sure I made the point clear.
